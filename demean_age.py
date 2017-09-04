@@ -2,7 +2,7 @@ import sys
 import numpy as np
 import pandas as pd
 
-age = pd.load_csv(sys.argv[1], sep='/t').age
+age = pd.loadcsv(sys.argv[1], sep='/t').age
 
 mean_age = sum(age)/len(age)
 assert mean_age < 100
